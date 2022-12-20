@@ -13,20 +13,12 @@ const SwapBody = () => {
         </div>    
         <div className='intro-body'>
             <h1>Matching digital<br />
-            swaps and DEX for greater<br />
-            finance</h1>
+            swaps and DEX for greater finance</h1>
             <p>
-            We believe that, in addition to traditional<br />
-            forms of linking NFTs such as traditional<br />
-            paintings and electronic posters, any<br />
-            customized, non-standard delivery, and<br />
-            electronically delivered works can be linked<br />
-            to the world of NFTs. Using NFTs as delivery<br />
-            credentials and the immutable record<br />
-            function of the blockchain decentralized<br />
-            network, the author, buyer, transaction time,<br />
-            and work URL will be permanently traced<br />
-            and recorded.<br />
+            Hest swap is the one-stop decentralized trading platform across networks.<br/ >
+            Hest swap began with the vision of creating a community-owned<br />
+            decentralized exchange which owns liquidity on Hest swap<br />
+            and governs itself via prediction market.
             </p>
             <Button className='intro-button'>Explore</Button>
         </div>

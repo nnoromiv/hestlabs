@@ -12,13 +12,12 @@ const PayBody = () => {
             <h2> Hest Pay</h2>
         </div>    
         <div className='intro-body'>
-            <h1>Unlock the<br />
-            potential of open<br />
-            finance</h1>
+            <h1>Unlocking open finance</h1>
             <p>
-            Trade scarce digital assets in a competitive swap<br />
-            environment on our versatile, decentralized and trustless<br />
-            auction platform.<br />
+            Hest pay would support a wide range of tokens among different chains<br />
+            like BNB Chain, Polygon and Ethereum. Integration of different<br />
+            chains is also planned to widen the coverage of tokens<br />
+            supported by the platform
             </p>
             <Button className='intro-button'>Explore</Button>
         </div>

@@ -1,6 +1,6 @@
 .swapbody {
     overflow: hidden;
-    padding: 100px 0 100px 150px;
+    padding: 100px 0 100px 100px;
     display: flex;
     flex-direction: row-reverse;
     border-radius: 60px 60px 0 0;
@@ -28,7 +28,7 @@
 .swapbody .intro-body p {
     font-size: 18px;
     padding: 30px 0 0 0;
-    width: 500px;
+    width: 600px;
     line-height: 30px;
 }
 
@@ -36,7 +36,7 @@
     width: fit-content;
     height: 600px;
     border-radius: 0 30px 30px 0;
-    margin: 0 120px 60px 0;
+    margin: 0 30px 60px 0;
     transition: 1s
 }
 

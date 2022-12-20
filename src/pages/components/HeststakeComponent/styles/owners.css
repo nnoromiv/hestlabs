@@ -28,6 +28,13 @@
     transition: .5s;
 }
 
+
+.owner .team .person a {
+    text-decoration: none;
+    color: white;
+}
+
+
 .owner .team .person h1 {
     font-size: 30px;
     width: 200px;
@@ -40,7 +47,8 @@
 }
 
 
-.owner .team .person:hover {
+.owner .team .person:hover,
+.owner .team .person a:hover {
     color: #1DA1F2;
 }
 

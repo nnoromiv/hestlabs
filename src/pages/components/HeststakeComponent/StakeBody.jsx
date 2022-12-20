@@ -12,13 +12,11 @@ const StakeBody = () => {
             <h2> Hest Stake</h2>
         </div>    
         <div className='intro-body'>
-            <h1>Unlock the<br />
-            potential of open<br />
-            finance</h1>
+            <h1> Stake.Earn.<br />
+            Relax</h1>
             <p>
-            Trade scarce digital assets in a competitive swap<br />
-            environment on our versatile, decentralized and trustless<br />
-            auction platform.<br />
+              We are building the infrastructure backbone of the ecosystem<br />
+              and paving the way to a decentralized future.
             </p>
             <Button className='intro-button'>Explore</Button>
         </div>
