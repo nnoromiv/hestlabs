@@ -1,0 +1,65 @@
+.blockchainbody {
+    overflow: hidden;
+    padding: 60px 0 0 150px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    border-radius: 60px 60px 0 0;
+    background: linear-gradient(180deg, #592187 0%, #632F86 39.73%, #782888 43.28%, #993888 46.74%, #A83888 50.34%, #C04090 54.75%, #D2528E 61.44%, #D86898 72.98%, #D87898 86.2%, #DA7AA6 100%)
+}
+.blockchainbody .intro-head {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    color: white;
+}
+
+.blockchainbody .intro-head h2 {
+    font-size: 30px;
+    padding: 0 0 0 20px;
+}
+
+.blockchainbody .intro-body {
+    z-index: 1;
+    position: absolute;
+    color: white;
+}
+
+.blockchainbody .intro-body h1 {
+    font-size: 60px;
+    padding: 60px 0 0 0;
+}
+
+.blockchainbody .intro-body p {
+    font-size: 18px;
+    padding: 30px 0 0 0;
+    width: fit-content;
+    line-height: 30px;
+}
+
+.blockchainbody .video-gif img {
+    width: 800px;
+    height: 800px;
+    z-index: -1;
+    border-radius: 0 60px 0 0;
+    position: relative;
+    margin: -60px 0 0 340px;
+    object-fit: cover;
+}
+
+.blockchainbody .intro-button {
+    margin: 60px 0 0 0;
+    color: black;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid white;
+    padding: 8px 80px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.blockchainbody .intro-button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}

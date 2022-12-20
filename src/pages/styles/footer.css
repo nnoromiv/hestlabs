@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    margin: 30px 150px 0 150px;
+    justify-content: space-between;
+}
+
+.footer .right h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer .left {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+}

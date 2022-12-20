@@ -1,0 +1,93 @@
+#card {
+    height: 340px;
+    min-height: 176px;
+    padding: 24px;
+    margin: 0 20px 0 20px;
+    border-radius: 20px;
+    gap: 20px;
+    display: grid;
+}
+
+.card-group {
+    margin: -150px 0 0 0;
+    position: relative;
+    z-index: 99;
+}
+
+
+.c1 {
+    color: #665D11;
+    background-color: #F4EDA8
+}
+
+.c2 {
+    color: white;
+    background-color: #3A3A3A
+}
+
+.c3 {
+    color: #4F3076;
+    background-color: #ae6fff
+}
+
+.c4 {
+    color: #7B2141;
+    background-color: #ff699f
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100%);
+}
+
+.card-inner p {
+    cursor: pointer;
+}
+
+#card-title {
+    font-size: 25px;
+    transition: 1s;
+    transform: translateY(160px);
+}
+
+#card:hover  .card-inner{
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0%);
+}
+
+#card:hover  .card-title{
+    transition: 1s;
+    transform: translateY(0%);
+}
+
+#card-button{
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 12px;
+    transition: 3s linear;
+}
+
+#card-button:hover {
+    animation-name: card-button-hover;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes card-button-hover {
+    from {
+        top: 30px;
+    }
+    to {
+        top: 0px;
+        background-color: black;
+        color: white;
+    }
+}

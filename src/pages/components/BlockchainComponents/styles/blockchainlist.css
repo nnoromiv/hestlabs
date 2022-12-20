@@ -1,0 +1,60 @@
+
+.blockchain-list {
+    display: flex;
+}
+
+.blockchain-list .list:not(:first-child) {
+    margin: 100px 0 0 -60px;
+}
+
+.blockchain-list .list {
+    cursor: pointer;
+    margin: 300px 0 0 0;
+    border: 1px solid gray;
+    padding: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockchain-list .list:hover {
+    background-color: gray;
+}
+
+.blockchain-list .list .title{
+    color: white;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(600%);
+}
+
+
+.blockchain-list .list:hover .title {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0%);
+}
+
+.blockchain-list .l1 {
+    margin: 200px 0 0 -100px !important;
+}
+
+.blockchain-list .l2 {
+    margin: 100px 0 0 -100px !important;
+}
+
+.blockchain-list .l3 {
+    margin: 0 0 0 -100px !important;
+}
+
+.blockchain-list .l4 {
+    margin: -100px 0 0 -100px !important;
+}
+
+.blockchain-list .l5 {
+    margin: -200px 0 0 -100px !important;
+}

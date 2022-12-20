@@ -1,0 +1,16 @@
+.next {
+    display: block;
+}
+
+.background {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    min-width: 100vw;
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -99;
+}

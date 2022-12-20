@@ -1,0 +1,30 @@
+.partners {
+    margin: 0 160px;
+}
+
+.partners h1 {
+    font-size: 70px;
+}
+
+.partners .partners-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    place-items: center;
+    margin: 50px 0 40px 0;
+    gap: 50px;
+}
+
+.partners .partners-list div {
+    font-size: 30px;
+    width: fit-content;
+}
+
+.partners .li {
+    width: 100%;
+    background-color: gray;
+    color: gray;
+    margin: 20px;
+    border-radius: 20px;
+    height: 1px;
+}

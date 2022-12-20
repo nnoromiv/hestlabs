@@ -1,0 +1,6 @@
+.homepage {
+    width: 100% !important;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 99;
+}

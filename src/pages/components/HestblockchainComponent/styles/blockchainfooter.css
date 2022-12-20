@@ -1,0 +1,31 @@
+.blockchainfooter {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 40px 225px;
+    overflow: hidden;
+}
+
+.blockchainfooter div {
+    margin: 30px 0;
+}
+
+.blockchainfooter .i1 {
+    margin: 60px 0 60px 450px;
+    border-radius: 30px 0 0 30px;
+    transition: 1s;
+}
+
+.blockchainfooter .i1:hover{
+    transform: translateX(-200px);
+}
+
+.blockchainfooter .i2 {
+    margin: -590px 600px 60px -1000px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.blockchainfooter .i2:hover {
+    transform: translateX(420px);
+}

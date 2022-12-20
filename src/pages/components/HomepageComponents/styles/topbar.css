@@ -1,0 +1,39 @@
+.topbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0 ;
+    cursor: pointer;
+}
+
+.topbar .logo {
+    display: flex;
+}
+
+.topbar .logo img {
+    width: fit-content;
+    height: 40px;
+    padding: 0 10px 0 0;
+}
+
+.topbar .logo h1 {
+    font-size: 30px;
+}
+
+.topbar .navigation {
+    display: flex;
+    /* width: 450px; */
+}
+
+.topbar .languagechange{
+    display: flex;
+    padding: 10px 0 0 0;
+}
+
+.topbar .languagechange img {
+    width: fit-content;
+    height: 20px;
+}
+
+.topbar .socials {
+    width: 100px;
+}
