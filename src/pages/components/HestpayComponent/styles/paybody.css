@@ -58,3 +58,64 @@
     color: white;
     border: 1px solid black;
 }
+
+@media only screen and (max-width: 1025px){
+    .paybody {
+        padding: 60px 0 140px 85px;
+    }
+    .paybody .image img:hover {
+        transform: translateX(-20%);
+    }
+}
+
+
+@media only screen and (max-width: 769px){
+    .paybody {
+        padding: 60px 0 100px 64px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .paybody {
+        padding: 60px 0 160px 35px;
+    }
+    .paybody .intro-body h1 {
+        font-size: 30px;
+    }
+    .paybody .intro-body p{
+        font-size: 12px;
+        line-height: 20px;
+        width: 400px;
+    }
+    .paybody .intro-button{
+        padding: 8px 40px;
+    }
+    .paybody .image img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .paybody {
+        padding: 60px 0 170px 16px;
+    }
+    .paybody .intro-body{
+        width: 80vw;
+    }
+    .paybody .intro-body h1 {
+       display: none;
+    }
+    .paybody .intro-head h2 {
+        font-size: 20px;
+    }
+    .paybody .intro-body p{
+       padding: 40px 60px 0 0;
+       width: 370px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .paybody .intro-body p{
+        width: 320px;
+     }
+}

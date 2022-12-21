@@ -63,3 +63,56 @@
     color: white;
     border: 1px solid black;
 }
+
+@media only screen and (max-width: 1025px){
+    .blockchainbody {
+        padding: 60px 0 0 85px;
+    }
+}
+
+
+@media only screen and (max-width: 769px){
+    .blockchainbody {
+        padding: 60px 0 0 64px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .blockchainbody {
+        padding: 60px 0 0 35px;
+    }
+    .blockchainbody .intro-body h1 {
+        font-size: 40px;
+    }
+    .blockchainbody .intro-body p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .blockchainbody .intro-button{
+        padding: 8px 40px;
+    }
+    .blockchainbody .video-gif{
+        height: 500px;
+    }
+    .blockchainbody .video-gif img{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .blockchainbody {
+        padding: 60px 0 0 16px;
+    }
+    .blockchainbody .intro-body h1 {
+       display: none;
+    }
+    .blockchainbody .intro-head h2 {
+        font-size: 20px;
+    }
+    .blockchainbody .intro-body p{
+       margin: 40px 0 0 0;
+    }
+    .blockchainbody .video-gif{
+        height: 400px;
+    }
+}

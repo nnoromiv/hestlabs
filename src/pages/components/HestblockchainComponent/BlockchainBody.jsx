@@ -12,8 +12,7 @@ const BlockchainBody = () => {
             <h2> Hest Blockchain</h2>
         </div>    
         <div className='intro-body'>
-            <h1>Hest<br />
-            Blockchain</h1>
+            <h1>Hest Blockchain</h1>
             <p>
             We want to empower the world to invest in, trade, and manage digital assets.<br />
             Hestlabs has a different overall investment strategy and can deploy<br />
@@ -25,7 +24,6 @@ const BlockchainBody = () => {
         </div>
     </div>  
     <div className='video-gif' >
-    {/* <img alt='gif' src="/video/facebook.gif" ></img> */}
         <img alt='gif' src='/video/metaverse.gif' />
     </div>
     </div>

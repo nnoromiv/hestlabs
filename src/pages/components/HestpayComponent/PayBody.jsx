@@ -14,10 +14,10 @@ const PayBody = () => {
         <div className='intro-body'>
             <h1>Unlocking open finance</h1>
             <p>
-            Hest pay would support a wide range of tokens among different chains<br />
-            like BNB Chain, Polygon and Ethereum. Integration of different<br />
-            chains is also planned to widen the coverage of tokens<br />
-            supported by the platform
+            Hest pay would support a wide range of tokens among different <br />
+            chains like BNB Chain, Polygon and Ethereum. Integration of<br />
+            different chains is also planned to widen the coverage of<br />
+            tokens supported by the platform
             </p>
             <Button className='intro-button'>Explore</Button>
         </div>
