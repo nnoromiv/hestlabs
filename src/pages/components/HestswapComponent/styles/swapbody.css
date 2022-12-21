@@ -60,3 +60,65 @@
     color: white;
     border: 1px solid black;
 }
+
+@media only screen and (max-width: 1025px){
+    .swapbody {
+        padding: 60px 0 140px 85px;
+    }
+    .swapbody .image img:hover {
+        transform: translateX(-20%);
+    }
+}
+
+
+@media only screen and (max-width: 769px){
+    .swapbody {
+        padding: 60px 0 100px 64px;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .swapbody {
+        padding: 60px 0 160px 35px;
+    }
+    .swapbody .intro-body h1 {
+        font-size: 30px;
+    }
+    .swapbody .intro-body p{
+        font-size: 12px;
+        line-height: 20px;
+        width: 400px;
+    }
+    .swapbody .intro-button{
+        padding: 8px 40px;
+    }
+    .swapbody .image img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .swapbody {
+        padding: 60px 0 240px 16px;
+    }
+    .swapbody .intro-body{
+        width: 80vw;
+    }
+    .swapbody .intro-body h1 {
+       display: none;
+    }
+    .swapbody .intro-head h2 {
+        font-size: 20px;
+    }
+    .swapbody .intro-body p{
+       padding: 40px 60px 0 0;
+       width: 370px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .swapbody .intro-body p{
+        width: 320px;
+     }
+}
