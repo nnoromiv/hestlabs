@@ -1,17 +1,16 @@
-#card {
-    height: 340px;
-    min-height: 176px;
-    padding: 24px;
-    margin: 0 20px 0 20px;
-    border-radius: 20px;
-    gap: 20px;
-    display: grid;
-}
-
-.card-group {
+#card-group {
     margin: -150px 0 0 0;
     position: relative;
     z-index: 99;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+
+#card {
+    padding: 24px;
+    margin: 0 20px 20px 20px;
+    border-radius: 20px;
 }
 
 

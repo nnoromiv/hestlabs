@@ -29,9 +29,20 @@ const CARDINFOS = [
     },
 ]
 
+export function cardHide (){
+    var cardGroup = document.getElementById('card-group');
+    cardGroup.style.display = 'none'
+}
+
+export function cardShow (){
+    var cardGroup = document.getElementById('card-group');
+    cardGroup.style.display = 'grid'
+}
+
+
 const Cards = () => {
   return (
-    <CardGroup className='card-group'>
+    <CardGroup id='card-group'>
         {
             CARDINFOS.map((item, index) => {
                 return(

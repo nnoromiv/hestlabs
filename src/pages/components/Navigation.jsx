@@ -7,6 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { MyLogo } from './HomepageComponents/Topbar'
 import { MyDivider } from '../Partners'
+import { cardHide, cardShow } from './BlockchainComponents/Cards'
 
 const NAVIGATION = [
     {
@@ -71,11 +72,18 @@ function Navigation() {
   )
 }
 
+/**
+ * If the state is open, hide the overflow and hide the card. If the state is not open, show the
+ * overflow and show the card.
+ */
 function isStateOpen(state){
-    state.isOpen ?
-   (document.body.style.overflow = 'hidden')
-   :
-   (document.body.style.overflow = '')
+if(state.isOpen){
+    (document.body.style.overflow = 'hidden')
+    cardHide()
+}else if(!(state.isOpen)){
+    (document.body.style.overflow = '')
+    cardShow()
+}
 }
 
 export function HamBurgerMenu(){
