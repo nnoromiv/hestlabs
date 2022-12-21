@@ -31,3 +31,27 @@
 .blockchain .participant h2 {
     font-size: 120px;
 }
+
+@media only screen and (max-width: 1024px){
+    .blockchain{
+        padding: 40px 64px 300px 64px
+    }
+}
+
+@media only screen and (max-width: 597px){
+    .blockchain{
+        padding: 40px 48px 300px 48px
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .blockchain{
+        padding: 40px 32px 300px 32px
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .blockchain{
+        padding: 40px 16px 300px 16px
+    }
+}

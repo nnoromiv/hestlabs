@@ -3,13 +3,13 @@
     position: relative;
     z-index: 99;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 
 #card {
     padding: 24px;
-    margin: 0 20px 20px 20px;
+    margin: 0 15px 15px 15px;
     border-radius: 20px;
 }
 
@@ -88,5 +88,91 @@
         top: 0px;
         background-color: black;
         color: white;
+    }
+}
+@media only screen and (max-width: 768px){
+    #card-group {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        height: fit-content;
+    }
+    #card-body {
+        padding: 0
+    }
+}
+@media only screen and (max-width: 597px){
+    #card {
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    #card-group {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        height: fit-content;
+    }
+    #card-body {
+        padding: 0
+    }
+    
+    .card-inner {
+        gap: 10px;
+        padding: 0;
+    }
+    #card-title {
+        font-size: 25px;
+        transition: 1s;
+        transform: translateY(80px);
+    }
+    #card {
+        margin: 0 5px 5px;
+        height: 200px;
+    }
+    #card-title {
+        font-size: 20px;
+    }
+    #card-button{
+        height: 30px;
+    }
+    .MuiSvgIcon-root {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    #card-group {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+    #card {
+        margin: 0 5px 5px;
+    }
+    #card-title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    #card-group {
+        grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
+        height: fit-content;
+    }
+    #card-title {
+        font-size: 20px;
+        transition: 1s;
+        transform: translateY(80px);
+    }
+    #card {
+        margin: 0 5px 5px;
+        height: 200px;
+    }
+    #card-title {
+        font-size: 20px;
+    }
+    #card-button{
+        height: 30px;
+    }
+    .MuiSvgIcon-root {
+        width: 30px !important;
+        height: 30px !important;
     }
 }
