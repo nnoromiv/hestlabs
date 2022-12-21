@@ -38,12 +38,12 @@
 }
 
 .topbar .hamburgermenu{
-    visibility: hidden;
+    display: none;
 }
 
 @media only screen and (max-width: 769px)  {
     .topbar .hamburgermenu {
-        visibility: visible;
+        display: flex;
     }
     .topbar .languagechange,
     .topbar .navigation,

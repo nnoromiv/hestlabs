@@ -12,3 +12,5 @@
     font-size: 18px;
     color: gray;
 }
+
+@media only screen and (max-width: 769px){}
