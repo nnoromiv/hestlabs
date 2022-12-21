@@ -1,29 +1,4 @@
-#nav-languagechange::after {
-    display: none;
-}
-
-#nav-languagechange {
-    padding: 0 8px;
-    font-size: 15px;
-    color: black;
-}
-
-#nav-navigation {
-    padding: 4px 25px;
-    color: black;
-}
-
-#nav-socials {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-}
-
-#nav-socials img{
-    width: 20px;
-    height: 20px;
-}
-
+/*Function Navigation*/
 #nav-navigation-nav .dropdown-menu {
     height: 200px;
 }
@@ -39,4 +14,148 @@
 
 #nav-navigation-nav .dropdown-item{
     height: 48px;
+}
+
+#nav-navigation {
+    padding: 4px 25px;
+    color: black;
+}
+
+/*Hamburger Menu*/
+.hamlogo{
+    padding: 0 !important;
+}
+#container-burger-nav-navigation-nav,
+#burger-nav-navigation-nav {
+    display: grid;
+    overflow: hidden;
+    margin: 30px 0 0 0;
+    padding: 0 !important;
+}
+
+#burger-nav-navigation-nav{
+    margin: 20px 0 0 0;
+    padding: 0 !important;
+}
+
+#burger-nav-navigation-nav .nav-item {
+    width: calc(0.8 * 100vw);
+    padding: 18px 40px;
+}
+
+#burger-nav-navigation-nav .nav-link{
+    padding: 0 !important;
+    height: 26px;
+}
+
+
+#burger-nav-navigation {
+    padding: 20px;
+    color: black;
+}
+
+#container-burger-nav-navigation-nav #social {
+   width: calc(0.7 * 100vw);
+   display: flex;
+   justify-content: flex-end;
+   padding: 0 0 30px 0
+}
+
+/*Language Change*/
+#nav-languagechange {
+    padding: 0 8px;
+    font-size: 15px;
+    color: black;
+}
+
+#nav-languagechange::after {
+    display: none;
+}
+
+/*Socials*/
+#nav-socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+#nav-socials img{
+    width: 20px;
+    height: 20px;
+}
+
+
+@media only screen and (max-width: 769px){
+    /* HamBurger Menu Style */
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 30px;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    position: fixed;
+    height: 36px;
+    width: 36px;
+    margin: 0 64px 0 0;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: white;
+    padding: 0 64px 0;
+    font-size: 18px;
+    margin: -40px 0 0 0;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    height: fit-content !important;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: white;
+  }
+}
+
+@media only screen and (max-width: 426px){
+    .hamlogo h1 {
+        font-size: 24px;
+    }
+/* General sidebar styles */
+  .bm-menu {
+    padding: 0 32px 0;
+  }
+/* Position and sizing of clickable cross button */
+    .bm-cross-button {
+        margin: 0 32px 0 0;
+    }
 }

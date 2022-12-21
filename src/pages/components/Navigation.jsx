@@ -1,7 +1,45 @@
 import React from 'react'
-import { Nav, NavDropdown } from 'react-bootstrap'
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { TelegramIcon, TwitterIcon, DiscordIcon } from './Icons'
 import './styles/navigation.css'
+import {slide as Menu} from 'react-burger-menu'
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import { MyLogo } from './HomepageComponents/Topbar'
+import { MyDivider } from '../Partners'
+
+const NAVIGATION = [
+    {
+        nav: 'Hest Blockchain',
+        eventkey: 1,
+        id: ''
+    },
+    {
+        nav: 'Hest Pay',
+        eventkey: 2,
+        id: ''
+    },
+     {
+        nav: 'Hest Swap',
+        eventkey: 3,
+        id: ''
+    },
+    {
+        nav: 'Hest Stake',
+        eventkey: 4,
+        id: ''
+    },
+    {
+        nav: 'Roadmap',
+        eventkey: 5,
+        id: 'nav-navigation'
+    },
+     {
+        nav: 'White Paper',
+        eventkey: 6,
+        id: 'nav-navigation'
+    },
+]
 
 function Navigation() {
   return (
@@ -10,19 +48,72 @@ function Navigation() {
     id='nav-navigation-nav'
     >
         <NavDropdown title='Products' id='nav-navigation' >
-            <NavDropdown.Item eventKey='1' >Hest Blockchain</NavDropdown.Item>
-            <NavDropdown.Item eventKey='2'>Hest Pay</NavDropdown.Item>
-            <NavDropdown.Item eventKey='3'>Hest Swap</NavDropdown.Item>
-            <NavDropdown.Item eventKey='4'>Hest Stake</NavDropdown.Item>
-        </NavDropdown>
-        <Nav.Item>
-            <Nav.Link eventKey='5' id='nav-navigation' >Roadmap</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-            <Nav.Link eventKey='6' id='nav-navigation' >White Paper</Nav.Link>
-        </Nav.Item>
+           {
+            NAVIGATION.slice(0,4).map(navigation => {
+                return(
+                    <NavDropdown.Item key={navigation.eventkey} eventKey={navigation.eventkey} >{navigation.nav}</NavDropdown.Item>
+                )
+            })
+           }
+        </NavDropdown>        
+            {
+                NAVIGATION.slice(4,).map(navigation => {
+                    return(
+                        <Nav.Item key={navigation.eventkey}>
+                        <Nav.Link eventKey={navigation.eventkey} id={navigation.id} >
+                        {navigation.nav}
+                        </Nav.Link>
+                        </Nav.Item>
+                    )
+                })
+            }        
     </Nav>
   )
+}
+
+function isStateOpen(state){
+    state.isOpen ?
+   (document.body.style.overflow = 'hidden')
+   :
+   (document.body.style.overflow = '')
+}
+
+export function HamBurgerMenu(){
+    return (
+        <Menu width={ '100vw' } onStateChange={isStateOpen} right customBurgerIcon={ <MenuIcon />} customCrossIcon={ <CloseIcon />} >
+            <Navbar>
+                <Container id='container-burger-nav-navigation-nav'>
+                    <Navbar.Brand href='#home'>
+                        <MyLogo classname='logo hamlogo' />
+                    </Navbar.Brand>
+                    <Nav id='burger-nav-navigation-nav'>
+                    {
+                        NAVIGATION.slice(0,4).map( navigation => {
+                            return (
+                                <Nav.Item key={navigation.eventkey}>
+                                <Nav.Link eventKey={navigation.eventkey} id='burger-nav-navigation' >{navigation.nav}</Nav.Link>
+                                </Nav.Item>
+                            )
+                        })
+                    }
+                    <MyDivider />
+                    {
+                        NAVIGATION.slice(4,).map( navigation => {
+                            return (
+                                <Nav.Item key={navigation.eventkey}>
+                                <Nav.Link eventKey={navigation.eventkey} id='burger-nav-navigation' >{navigation.nav}</Nav.Link>
+                                </Nav.Item>
+                            )
+                        })
+                    }
+                    </Nav>
+                    <div id='social'>
+                        <Socials />
+                    </div>
+                </Container>
+            </Navbar>
+        </Menu>
+    )
 }
 
 export function LanguageChange() {

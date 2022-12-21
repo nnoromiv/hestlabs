@@ -21,7 +21,6 @@
 
 .topbar .navigation {
     display: flex;
-    /* width: 450px; */
 }
 
 .topbar .languagechange{
@@ -36,4 +35,27 @@
 
 .topbar .socials {
     width: 100px;
+}
+
+.topbar .hamburgermenu{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 769px)  {
+    .topbar .hamburgermenu {
+        visibility: visible;
+    }
+    .topbar .languagechange,
+    .topbar .navigation,
+    .topbar .socials {
+        display: none;
+    }
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .topbar .logo {
+        padding: 0 0 0 20px;
+    }
 }

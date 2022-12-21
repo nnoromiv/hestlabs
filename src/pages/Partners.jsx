@@ -67,23 +67,29 @@ const PARTNERS = [
     },
 ]
 
+export const MyDivider = () => {
+    return (
+        <Divider className='li'/>
+    )
+}
+
 const Partners = () => {
   return (
     <div className='partners'>
         <h1>Partners</h1>
         <div className='partners-list' >    
        {
-        PARTNERS.map((partner, index) => {
+        PARTNERS.map(partner => {
             return (            
                 <>    
-                <div key={index}>{partner.text}</div>
+                <div key={partner.text} >{partner.text}</div>
                 {partner.icon}
                 </>
             )
         } )
        }
        </div>
-       <Divider className='li'/>
+       <MyDivider />
     </div>
     
   )
