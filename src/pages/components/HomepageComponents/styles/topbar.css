@@ -53,9 +53,24 @@
     .topbar {
         display: flex;
         justify-content: space-between;
+        padding: 32px 64px;
     }
-    
-    .topbar .logo {
-        padding: 0 0 0 20px;
+}
+
+@media only screen and (max-width: 643px)  {
+    .topbar {
+        padding: 32px 48px 0;
+    }
+}
+
+@media only screen and (max-width: 478px)  {
+    .topbar {
+        padding: 32px 32px 0;
+    }
+}
+
+@media only screen and (max-width: 376px)  {
+    .topbar {
+        padding: 32px 16px 0;
     }
 }

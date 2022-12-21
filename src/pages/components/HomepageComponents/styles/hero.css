@@ -13,4 +13,56 @@
     color: gray;
 }
 
-@media only screen and (max-width: 769px){}
+@media only screen and (max-width: 776px){
+    .hero{
+        padding: 10px 64px 200px;
+    }
+}
+
+@media only screen and (max-width: 643px){
+    .hero h2 {
+        font-size: 28px;
+        margin: 0 0 0 0;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hero{
+        padding: 0 48px 150px;
+    }
+}
+
+@media only screen and (max-width: 566px){
+    .hero p {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 537px){
+    .hero p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 478px)  {
+    .hero{
+        padding: 0 32px 150px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .hero p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 376px)  {
+    .hero{
+        padding: 0 16px 150px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .hero p {
+        font-size: 10px;
+    }
+}
