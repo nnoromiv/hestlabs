@@ -5,8 +5,14 @@
     z-index: 99;
 }
 
+.homepage .large {
+    display: block;
+    height: fit-content;
+}
+
 .homepage .phone {
     display: none;
+    height: fit-content;
 }
 
 @media only screen and (max-width: 426px){
