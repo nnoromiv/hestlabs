@@ -42,7 +42,7 @@ const Partnerslist = () => {
         BLOCKCHAINLIST.map((blockchainlist, index) => {
             return (
                 <div className={blockchainlist.classname} key={index}>
-                <img alt='' src={blockchainlist.image} width='40px' />
+                <img alt='' src={blockchainlist.image} />
                 <p className='title'>{blockchainlist.partner}</p>
                 </div>
             )

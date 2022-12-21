@@ -3,6 +3,12 @@
     display: flex;
 }
 
+.blockchain-list img {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
 .blockchain-list .list:not(:first-child) {
     margin: 100px 0 0 -60px;
 }
@@ -57,4 +63,81 @@
 
 .blockchain-list .l5 {
     margin: -200px 0 0 -100px !important;
+}
+
+@media only screen and (max-width: 769px){
+    .blockchain-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 40px 0 0 0;
+        gap: 0;
+        justify-content: center;
+        place-items: center;
+    }
+    .blockchain-list .list{
+        margin: 0 ;
+    }
+    .blockchain-list .l1 {
+        margin: 0 0 0 -50px !important;
+    }
+    .blockchain-list .l2{
+        margin: 0 0 0 -100px !important;
+    }
+    .blockchain-list .l3{
+        margin: -50px 0 0 0 !important
+    }     
+    .blockchain-list .l4{
+        margin: -50px 0 0 -50px !important;
+    }   
+    .blockchain-list .l5 {
+        margin: -50px 0 0 -100px !important;
+    }
+    .blockchain-list .list{
+        height: 200px;
+        width: 200px;
+    }
+    .blockchain-list .list:not(:first-child) {
+        margin: 100px 0 0 0;
+    }
+    
+}
+
+@media only screen and (max-width: 426px){
+    .blockchain-list .list{
+        height: 120px;
+        width: 120px;
+    }
+    .blockchain-list img {
+        width: 20px;
+        padding: 30px 0 0 0
+    }
+    .blockchain-list .l1 {
+        margin: 0 0 0 -25px !important;
+    }
+    .blockchain-list .l2{
+        margin: 0 0 0 -50px !important;
+    }
+    .blockchain-list .l3{
+        margin: -25px 0 0 0 !important
+    }     
+    .blockchain-list .l4{
+        margin: -25px 0 0 -25px !important;
+    }   
+    .blockchain-list .l5 {
+        margin: -25px 0 0 -50px !important;
+    }
+    .blockchain-list .list .title{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .blockchain-list .list{
+        height: 105px;
+        width: 105px;
+    }
+    .blockchain-list img {
+        width: 18px;
+        padding: 30px 0 0 0
+    }
 }
