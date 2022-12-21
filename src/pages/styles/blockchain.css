@@ -32,21 +32,21 @@
     font-size: 120px;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1025px){
+    .blockchain{
+        padding: 40px 85px 300px 85px
+    }
+}
+
+@media only screen and (max-width: 769px){
     .blockchain{
         padding: 40px 64px 300px 64px
     }
 }
 
-@media only screen and (max-width: 597px){
-    .blockchain{
-        padding: 40px 48px 300px 48px
-    }
-}
-
 @media only screen and (max-width: 426px){
     .blockchain{
-        padding: 40px 32px 300px 32px
+        padding: 40px 35px 300px 35px
     }
 }
 

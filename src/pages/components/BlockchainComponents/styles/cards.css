@@ -3,10 +3,8 @@
     position: relative;
     z-index: 99;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
 }
-
-
 #card {
     padding: 24px;
     margin: 0 15px 15px 15px;
@@ -34,6 +32,16 @@
     background-color: #ff699f
 }
 
+.card-body {
+    padding: 0 !important;
+}
+
+#card-title {
+    font-size: 25px;
+    transition: 1s;
+    transform: translateY(160px);
+}
+
 .card-inner {
     display: flex;
     flex-direction: column;
@@ -44,14 +52,22 @@
     transform: translateY(100%);
 }
 
-.card-inner p {
-    cursor: pointer;
+.card-inner #card-button{
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 12px;
+    transition: 3s linear;
 }
 
-#card-title {
-    font-size: 25px;
-    transition: 1s;
-    transform: translateY(160px);
+.card-inner #card-button:hover {
+    animation-name: card-button-hover;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.card-inner p {
+    cursor: pointer;
 }
 
 #card:hover  .card-inner{
@@ -62,21 +78,7 @@
 
 #card:hover  .card-title{
     transition: 1s;
-    transform: translateY(0%);
-}
-
-#card-button{
-    height: 40px;
-    border-radius: 20px;
-    padding: 5px 15px;
-    font-size: 12px;
-    transition: 3s linear;
-}
-
-#card-button:hover {
-    animation-name: card-button-hover;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+    transform: translateY(10px);
 }
 
 
@@ -90,89 +92,48 @@
         color: white;
     }
 }
-@media only screen and (max-width: 768px){
-    #card-group {
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        height: fit-content;
+
+@media only screen and (max-width: 1024px){
+    #card {
+        padding: 20px;
+        margin: 0 10px 10px;
+        border-radius: 20px;
     }
-    #card-body {
-        padding: 0
+    #card-title {
+        transform: translateY(150px);
     }
 }
-@media only screen and (max-width: 597px){
-    #card {
-        padding: 12px;
+
+@media only screen and (max-width: 768px){
+    #card-group {
+        grid-template-columns: repeat(2, 1fr);
+        height: fit-content;
     }
 }
 
 @media only screen and (max-width: 426px){
-    #card-group {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        height: fit-content;
-    }
-    #card-body {
-        padding: 0
-    }
-    
-    .card-inner {
-        gap: 10px;
-        padding: 0;
-    }
-    #card-title {
-        font-size: 25px;
-        transition: 1s;
-        transform: translateY(80px);
-    }
     #card {
-        margin: 0 5px 5px;
+        padding: 12px;
         height: 200px;
-    }
-    #card-title {
-        font-size: 20px;
-    }
-    #card-button{
-        height: 30px;
-    }
-    .MuiSvgIcon-root {
-        width: 40px !important;
-        height: 40px !important;
-    }
-}
-
-@media only screen and (max-width: 376px){
-    #card-group {
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    }
-    #card {
-        margin: 0 5px 5px;
-    }
-    #card-title {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 321px){
-    #card-group {
-        grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
-        height: fit-content;
-    }
-    #card-title {
-        font-size: 20px;
-        transition: 1s;
-        transform: translateY(80px);
-    }
-    #card {
-        margin: 0 5px 5px;
-        height: 200px;
-    }
-    #card-title {
-        font-size: 20px;
-    }
-    #card-button{
-        height: 30px;
     }
     .MuiSvgIcon-root {
         width: 30px !important;
         height: 30px !important;
+    } 
+    #card-group {
+        margin: -120px 0 0 0;
     }
+    #card-title {
+        font-size: 20px;
+        transform: translateY(120px);
+    }
+    .card-inner #card-button {
+        height: 30px;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .card-inner p {
+        font-size: 14px;
+    }
+    
 }
