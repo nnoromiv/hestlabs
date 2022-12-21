@@ -2,7 +2,7 @@ import React from 'react'
 import Topbar from './components/HomepageComponents/Topbar'
 import Hero from './components/HomepageComponents/Hero'
 import './styles/homepage.css'
-import Videobackground from './components/HomepageComponents/Videobackground'
+import Videobackground, { Phonevideobackground } from './components/HomepageComponents/Videobackground'
 
 const Homepage = () => {
   return (
@@ -11,7 +11,12 @@ const Homepage = () => {
     <Topbar />
     <Hero />
     </div>
+    <div className='large'>
     <Videobackground />
+    </div>
+    <div className='phone'>
+      <Phonevideobackground />
+    </div>
     </div>
   )
 }
