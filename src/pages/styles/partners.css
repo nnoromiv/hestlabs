@@ -28,3 +28,72 @@
     border-radius: 20px;
     height: 1px;
 }
+
+@media only screen and (max-width: 1025px){
+    .partners {
+        margin: 0 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .partners h1 {
+        font-size: 60px;
+    }
+    .partners .partners-list {
+        margin: 50px 0 0;
+        gap: 30px;
+    }
+    .partners .partners-list div {
+        font-size: 18px;
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 607px) {
+    .partners h1 {
+        font-size: 50px;
+    }
+    .partners .partners-list .MuiSvgIcon-root{
+        display: none;
+    }
+    .partners .partners-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .partners .partners-list div {
+        width: 100px;
+    }
+    .partners .partners-list {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .partners h1 {
+        font-size: 40px;
+    }
+    .partners .partners-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .partners {
+        margin: 0 8px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .partners .team .person h1{
+        font-size: 16px;
+        width: 90px;
+    }
+    .partners .team .icon {
+        width: 10px !important;
+        height: 10px !important;
+        margin: 35px 0 0 0;
+    }
+    .partners .partners-list div {
+        font-size: 14px;
+        width: 80px;
+    }
+}
