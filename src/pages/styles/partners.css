@@ -6,17 +6,17 @@
     font-size: 70px;
 }
 
-.partners .partners-list {
+.partners .partners-list  {
     width: 90vw;
     overflow-x: scroll;
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 0 0 30px 680px;
-    cursor: pointer;
 }
 
-.partners .partners-list img {
+.partners .partners-list  img {
+    cursor: pointer;
     max-width: 500px;
     width: 100%;
     max-height: 200px;
@@ -25,18 +25,25 @@
     border-radius: 100%;
 }
 
+.partners .partners-list   h4{
+    font-size: 20px;
+}
+
 .partners .li {
     width: 100%;
+    height: 1px;
     background-color: rgb(58, 58, 58);
     color: rgb(58, 58, 58);
     margin: 20px;
     border-radius: 20px;
-    height: 1px;
 }
 
 @media only screen and (max-width: 1025px){
     .partners {
         margin: 0 32px;
+    }
+    .partners .partners-list  {
+        padding: 0 0 30px 770px;
     }
 }
 
@@ -44,61 +51,51 @@
     .partners h1 {
         font-size: 60px;
     }
-    .partners .partners-list {
-        margin: 50px 0 0;
-        gap: 30px;
+    .partners .partners-list  {
+        padding: 0 0 30px 580px;
     }
-    .partners .partners-list div {
+    .partners .partners-list  div {
         font-size: 18px;
         width: fit-content;
     }
 }
 
-@media only screen and (max-width: 607px) {
+@media only screen and (max-width: 681px) {
     .partners h1 {
         font-size: 50px;
     }
-    .partners .partners-list .MuiSvgIcon-root{
-        display: none;
+    .partners .partners-list  {
+        padding: 0 0 30px 800px;
+        gap: 10px;
     }
-    .partners .partners-list {
-        grid-template-columns: repeat(4, 1fr);
+    .partners .partners-list  img {
+        width: 150px;
+        height: 150px;
     }
-    .partners .partners-list div {
-        width: 100px;
-    }
-    .partners .partners-list {
-        gap: 20px;
+    .partners .partners-list ::-webkit-scrollbar{
+        display: none
     }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 531px) {
     .partners h1 {
         font-size: 40px;
     }
-    .partners .partners-list {
-        grid-template-columns: repeat(3, 1fr);
+    .partners .partners-list  {
+        padding: 0 0 30px 564px;
+    }
+    .partners .partners-list  img {
+        width: 100px;
+        height: 100px;
     }
 }
+
 
 @media only screen and (max-width: 376px) {
     .partners {
         margin: 0 8px;
     }
-}
-
-@media only screen and (max-width: 320px) {
-    .partners .team .person h1{
-        font-size: 16px;
-        width: 90px;
-    }
-    .partners .team .icon {
-        width: 10px !important;
-        height: 10px !important;
-        margin: 35px 0 0 0;
-    }
-    .partners .partners-list div {
-        font-size: 14px;
-        width: 80px;
+    .partners .partners-list  {
+        padding: 0 0 30px 564px;
     }
 }

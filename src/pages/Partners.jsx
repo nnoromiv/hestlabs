@@ -82,7 +82,6 @@ const Partners = () => {
             return (            
                 <>    
                 <img key={partnerimage.classname}  alt='i1' src={partnerimage.image} />
-                
                 </>
             )
         } )
