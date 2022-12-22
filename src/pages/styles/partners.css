@@ -1,5 +1,5 @@
 .partners {
-    margin: 0 160px;
+    margin: 0 64px;
 }
 
 .partners h1 {
@@ -7,17 +7,22 @@
 }
 
 .partners .partners-list {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    width: 90vw;
+    overflow-x: scroll;
+    display: flex;
     justify-content: center;
-    place-items: center;
-    margin: 50px 0 40px 0;
-    gap: 50px;
+    gap: 20px;
+    padding: 0 0 30px 680px;
+    cursor: pointer;
 }
 
-.partners .partners-list div {
-    font-size: 25px;
-    width: 150px;
+.partners .partners-list img {
+    max-width: 500px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 100%;
 }
 
 .partners .li {

@@ -1,69 +1,68 @@
 import { Divider } from '@mui/material'
 import React from 'react'
 import './styles/partners.css'
-import StarIcon from '@mui/icons-material/Star';
 
-
-const PARTNERS = [
+const PARTNERSIMAGE = [
     {
-        text: 'Nomics',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
+        name: 'Forbes',
+        image: '/images/forbes.png',
+        classname: 'p3',
     },
     {
-        text: 'Livecoinwatch',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
+        name: 'Web3ORB',
+        image: 'https://pbs.twimg.com/profile_images/1589674346494431232/dK85kvgJ_400x400.jpg',
+        classname: 'p8'
     },
     {
-        text: 'Forbes',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
+        name: 'Livecoinwatch',
+        image: 'https://brandfetch.com/_next/image?url=https%3A%2F%2Fasset.brandfetch.io%2FidZvuvIAgb%2FidncvTidjS.jpeg&w=1920&q=75',
+        classname: 'p2',
     },
     {
-        text: 'Exchangily',
+        name: 'Nomics',
+        image: 'https://avatars.githubusercontent.com/u/32463793?s=200&v=4',
         classname: 'p1',
-        icon:'',
     },
     {
-        text: 'Hyperpay',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
+        name: 'Octium',
+        image: '/images/octium.png',
+        classname: 'p9'
     },
     {
-        text: 'Misses',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
+        name: 'Bi-Finance',
+        image: 'https://theme.zdassets.com/theme_assets/14997702/222c7335abc7c55ee38d6ea660ac886fb253cf12.jpg',
+        classname: 'p11'
     },
     {
-        text: 'Paycool',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
+        name: 'Xeggex',
+        image: '/images/xeggex.png',
+        classname: 'p10'
     },
     {
-        text: 'Web3ORB',
-        classname: 'p1',
-        icon:'',
-    },
+        name: 'eXchangily',
+        image: 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/372f4f645cd6c92d9367',
+        classname: 'p4'
+    },  
     {
-        text: 'Octium',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
+        name: 'HyperPay',
+        image: '/images/hyperpay.png',
+        classname: 'p5'
     },
+    // {
+    //     name: 'Misses',
+    //     image: '',
+    //     classname: 'p6',
+    // },
     {
-        text: 'Xeggex',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
+        name: 'PayCools',
+        image: '/images/paycools.png',
+        classname: 'p7'
     },
+    
     {
-        text: 'Bi-Finance',
-        classname: 'p1',
-        icon: <StarIcon className='icon'/>,
-    },
-    {
-        text: 'Galaxy labs',
-        classname: 'p1',
-        icon:'',
+        name: 'Galaxy labs',
+        image: '',
+        classname: 'p12'
     },
 ]
 
@@ -79,11 +78,11 @@ const Partners = () => {
         <h1>Partners</h1>
         <div className='partners-list' >    
        {
-        PARTNERS.map(partner => {
+        PARTNERSIMAGE.map(partnerimage => {
             return (            
                 <>    
-                <div key={partner.text} >{partner.text}</div>
-                {partner.icon}
+                <img key={partnerimage.classname}  alt='i1' src={partnerimage.image} />
+                
                 </>
             )
         } )
