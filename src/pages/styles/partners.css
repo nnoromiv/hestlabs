@@ -1,5 +1,5 @@
 .partners {
-    margin: 0 64px;
+    margin: 20px 64px;
 }
 
 .partners h1 {
@@ -40,7 +40,7 @@
 
 @media only screen and (max-width: 1025px){
     .partners {
-        margin: 0 32px;
+        margin: 15px 32px;
     }
     .partners .partners-list  {
         padding: 0 0 30px 770px;
@@ -93,7 +93,7 @@
 
 @media only screen and (max-width: 376px) {
     .partners {
-        margin: 0 8px;
+        margin: 10px 8px;
     }
     .partners .partners-list  {
         padding: 0 0 30px 564px;
