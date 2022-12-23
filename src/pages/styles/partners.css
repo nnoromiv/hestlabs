@@ -1,5 +1,5 @@
 .partners {
-    margin: 20px 64px;
+    margin: 20px 16px;
 }
 
 .partners h1 {
@@ -7,12 +7,15 @@
 }
 
 .partners .partners-list  {
-    width: 90vw;
+    width: 97vw;
     overflow-x: scroll;
     display: flex;
-    justify-content: center;
+    padding: 20px;
     gap: 20px;
-    padding: 0 0 30px 680px;
+}
+
+.partners .partners-list::-webkit-scrollbar{
+    display: none
 }
 
 .partners .partners-list  img {
@@ -38,25 +41,9 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 1025px){
-    .partners {
-        margin: 15px 32px;
-    }
-    .partners .partners-list  {
-        padding: 0 0 30px 770px;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .partners h1 {
         font-size: 60px;
-    }
-    .partners .partners-list  {
-        padding: 0 0 30px 580px;
-    }
-    .partners .partners-list  div {
-        font-size: 18px;
-        width: fit-content;
     }
 }
 
@@ -65,24 +52,17 @@
         font-size: 50px;
     }
     .partners .partners-list  {
-        padding: 0 0 30px 800px;
         gap: 10px;
     }
     .partners .partners-list  img {
         width: 150px;
         height: 150px;
     }
-    .partners .partners-list ::-webkit-scrollbar{
-        display: none
-    }
 }
 
 @media only screen and (max-width: 531px) {
     .partners h1 {
         font-size: 40px;
-    }
-    .partners .partners-list  {
-        padding: 0 0 30px 564px;
     }
     .partners .partners-list  img {
         width: 100px;
@@ -94,8 +74,5 @@
 @media only screen and (max-width: 376px) {
     .partners {
         margin: 10px 8px;
-    }
-    .partners .partners-list  {
-        padding: 0 0 30px 564px;
     }
 }
