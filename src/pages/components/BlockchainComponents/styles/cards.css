@@ -39,7 +39,7 @@
 #card-title {
     font-size: 25px;
     transition: 1s;
-    transform: translateY(160px);
+    transform: translateY(150px);
 }
 
 .card-inner {
