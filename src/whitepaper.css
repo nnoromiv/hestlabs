@@ -4,26 +4,18 @@
 }
 
 .react-pdf__Page__canvas {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 80% !important;
     height: 100% !important;
 }
 
 .WhitePaperButtonPrev{
     margin: 0 0 0 20px;
-    padding: 5px 10px;
-    border-radius: 30px;
-    border: none;
-    color: black;
     cursor: pointer;
 }
 
 .WhitePaperButtonNext{
-    margin: 0 20px 0 0;
-    padding: 5px 10px;
-    border-radius: 30px;
-    border: none;
-    color: black;
+    margin: 0 40px 0 0;
     cursor: pointer;
 }
 

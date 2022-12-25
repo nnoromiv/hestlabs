@@ -27,20 +27,20 @@ const Whitepaper = () => {
   }
   return (
     <div>
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'fixed', width: '100vw', zIndex: 1,}}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'fixed', width: '100vw', zIndex: 1, margin: '10px 20px 30px' }}>
     {
           pageNum <= 1
             ? ''
-            : <button className='WhitePaperButtonPrev' onClick={() => goToPrevPage()}><ArrowBackIosIcon /></button>
+            : <ArrowBackIosIcon className='WhitePaperButtonPrev' onClick={() => goToPrevPage()} />
     }
     <DownloadIcon  className='DownloadButton' onClick={() => downloadPDF()} />
     {
             pageNum >= numOfPages
             ? ''
-            : <button className='WhitePaperButtonNext' onClick={() => goToNextPage()}><ArrowForwardIosIcon /></button>
+            : <ArrowForwardIosIcon className='WhitePaperButtonNext' onClick={() => goToNextPage()}/>
     }
     </div>
-        <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center'}}>
+        <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center',}}>
         <Document
         file='/whitepaper.pdf'
         onLoadSuccess={onDocumentLoadSuccess}
