@@ -10,7 +10,7 @@
 
 .hero p {
     font-size: 18px;
-    color: gray;
+    color: black;
 }
 
 @media only screen and (max-width: 776px){

@@ -10,22 +10,26 @@ const CARDINFOS = [
     {
         cardClassname: 'c3',
         cardTitle: 'Blockchain',
-        cardImage: <HubIcon sx={{fontSize: 50}} />
+        cardImage: <HubIcon sx={{fontSize: 50}} />,
+        cardHrf: 'blockchain-link'
     },
     {
         cardClassname: 'c1',
         cardTitle: 'Hest Pay',
-        cardImage: <ScatterPlotIcon sx={{fontSize: 50}} />
+        cardImage: <ScatterPlotIcon sx={{fontSize: 50}} />,
+        cardHrf: 'pay-link'
     },
     {
         cardClassname: 'c2',
         cardTitle: 'Hest Swap',
-        cardImage: <FitbitIcon sx={{fontSize: 50}} />
+        cardImage: <FitbitIcon sx={{fontSize: 50}} />,
+        cardHrf: 'swap-link'
     },
     {
         cardClassname: 'c4',
         cardTitle: 'Hest Stake',
-        cardImage: <ModeFanOffIcon sx={{fontSize: 50}} />
+        cardImage: <ModeFanOffIcon sx={{fontSize: 50}} />,
+        cardHrf: 'stake-link'
     },
 ]
 
@@ -53,7 +57,7 @@ const Cards = () => {
             <Card.Body id='card-body'>
                 <Card.Title id='card-title'>{item.cardTitle}</Card.Title>
                 <section className='card-inner' >
-                    <Button variant='light' id='card-button'>Landing page</Button>
+                    <Button variant='light' id='card-button' href={`#${item.cardHrf}`}>Landing page</Button>
                     <p style={{display:'flex !important'}}> Learn more</p>
                 </section>
             </Card.Body>

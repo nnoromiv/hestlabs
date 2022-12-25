@@ -13,46 +13,52 @@ const NAVIGATION = [
     {
         nav: 'Hest Blockchain',
         eventkey: 1,
-        id: ''
+        id: '',
+        hrf:'blockchain-link'
     },
     {
         nav: 'Hest Pay',
         eventkey: 2,
-        id: ''
+        id: '',
+        hrf: 'pay-link'
     },
      {
         nav: 'Hest Swap',
         eventkey: 3,
-        id: ''
+        id: '',
+        hrf: 'swap-link'
     },
     {
         nav: 'Hest Stake',
         eventkey: 4,
-        id: ''
+        id: '',
+        hrf: 'stake-link'
     },
     {
         nav: 'Roadmap',
         eventkey: 5,
-        id: 'nav-navigation'
+        id: 'nav-navigation',
+        hrf: ''
     },
      {
         nav: 'White Paper',
         eventkey: 6,
-        id: 'nav-navigation'
+        id: 'nav-navigation',
+        hrf: '/whitepaper'
     },
 ]
 
 function Navigation() {
   return (
-    <Nav
-    onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-    id='nav-navigation-nav'
-    >
+    <Nav id='nav-navigation-nav' >
         <NavDropdown title='Products' id='nav-navigation' >
            {
             NAVIGATION.slice(0,4).map(navigation => {
                 return(
-                    <NavDropdown.Item key={navigation.eventkey} eventKey={navigation.eventkey} >{navigation.nav}</NavDropdown.Item>
+                    <NavDropdown.Item key={navigation.eventkey} 
+                    eventKey={navigation.eventkey} href={`#${navigation.hrf}`}>
+                    {navigation.nav}
+                    </NavDropdown.Item>
                 )
             })
            }
@@ -61,7 +67,7 @@ function Navigation() {
                 NAVIGATION.slice(4,).map(navigation => {
                     return(
                         <Nav.Item key={navigation.eventkey}>
-                        <Nav.Link eventKey={navigation.eventkey} id={navigation.id} >
+                        <Nav.Link eventKey={navigation.eventkey} id={navigation.id} href={navigation.hrf} >
                         {navigation.nav}
                         </Nav.Link>
                         </Nav.Item>
@@ -99,7 +105,7 @@ export function HamBurgerMenu(){
                         NAVIGATION.slice(0,4).map( navigation => {
                             return (
                                 <Nav.Item key={navigation.eventkey}>
-                                <Nav.Link eventKey={navigation.eventkey} id='burger-nav-navigation' >{navigation.nav}</Nav.Link>
+                                <Nav.Link eventKey={navigation.eventkey} id='burger-nav-navigation' href={`#${navigation.hrf}`}>{navigation.nav}</Nav.Link>
                                 </Nav.Item>
                             )
                         })
@@ -109,7 +115,7 @@ export function HamBurgerMenu(){
                         NAVIGATION.slice(4,).map( navigation => {
                             return (
                                 <Nav.Item key={navigation.eventkey}>
-                                <Nav.Link eventKey={navigation.eventkey} id='burger-nav-navigation' >{navigation.nav}</Nav.Link>
+                                <Nav.Link eventKey={navigation.eventkey} id='burger-nav-navigation' href={navigation.hrf}>{navigation.nav}</Nav.Link>
                                 </Nav.Item>
                             )
                         })
@@ -141,15 +147,18 @@ export function LanguageChange() {
 const SOCIALS = [
     {
         name: 'twitter',
-        src: `${TwitterIcon}`
+        src: `${TwitterIcon}`,
+        hrf: 'https://twitter.com/hestlabs'
     },
     {
         name: 'telegram',
-        src: `${TelegramIcon}`
+        src: `${TelegramIcon}`,
+        hrf: 'https://t.me/hestlabs'
     },
     {
         name: 'discord',
-        src: `${DiscordIcon}`
+        src: `${DiscordIcon}`,
+        hrf: 'https://discord.gg/nzMRGq4k'
     }
 ]
 
@@ -160,7 +169,9 @@ export function Socials(){
         SOCIALS.map((social) => {
             return (
                 <div className={social.name} key={social.name}>
-                    <img srcSet='' alt={social.name} src={social.src} />
+                    <a href={social.hrf} >
+                    <img srcSet='' alt={social.name} src={social.src} />  
+                    </a>                                
                 </div>
             )
         })

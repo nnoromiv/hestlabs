@@ -62,7 +62,7 @@
 
 @media only screen and (max-width: 1025px){
     .paybody {
-        padding: 60px 0 140px 85px;
+        padding: 60px 0 160px 85px;
     }
     .paybody .image img:hover {
         transform: translateX(-20%);

@@ -12,7 +12,7 @@ const Hestpay = () => {
     })
   return (
     <div className='hestpay' /* A reference to the parallax effect. */
-    ref={parallax.ref}>
+    ref={parallax.ref} id='pay-link'>
         <PayBody />
     </div>
   )

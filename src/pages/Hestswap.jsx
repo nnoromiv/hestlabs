@@ -12,7 +12,7 @@ const parallax = useParallax({
     })
   return (
     <div className='hestswap' /* A reference to the parallax effect. */
-    ref={parallax.ref}>
+    ref={parallax.ref} id='swap-link'>
         <SwapBody />
     </div>
   )

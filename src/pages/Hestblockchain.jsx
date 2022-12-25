@@ -12,7 +12,7 @@ const Hestblockchain = () => {
     })
   return (
     <div className='hestblockchain' /* A reference to the parallax effect. */
-    ref={parallax.ref} >
+    ref={parallax.ref} id='blockchain-link'>
         <BlockchainBody />
         <BlockchainFooter />
     </div>

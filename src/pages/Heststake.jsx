@@ -13,7 +13,7 @@ const parallax = useParallax({
     })
   return (
     <div className='heststake' /* A reference to the parallax effect. */
-    ref={parallax.ref}>
+    ref={parallax.ref} id='stake-link'>
         <StakeBody />
         <Owners />
     </div>

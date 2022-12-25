@@ -2,6 +2,7 @@
   scroll-behavior: smooth;
   background-color: white;
   overflow: hidden;
+  font-family: 'Sora', sans-serif;
 }
 
 ::-webkit-scrollbar{

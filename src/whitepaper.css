@@ -1,0 +1,62 @@
+.DownloadButton{
+    width: 100px;
+    margin: 10px 0 0 40px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.WhitePaperButtonPrev{
+    width: 100px;
+    margin: 0 0 0 40px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.WhitePaperButtonNext{
+    width: 100px;
+    margin: 0 40px 0 0;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.WhitePaperNextDisabled{
+    width: 100px;
+    margin: 0 40px 0 0;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.WhitePaperPrevDisabled{
+    width: 100px;
+    margin: 0 0 0 40px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.WhitePaperButtonNext:hover,
+.WhitePaperButtonPrev:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+div .react-pdf__Page__textContent,
+div .react-pdf__Page__annotations {
+    display: none;
+}

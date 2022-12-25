@@ -18,6 +18,7 @@
 
 .swapbody .intro-body {
     color: white;
+    padding: 0 10px 0 0;
 }
 
 .swapbody .intro-body h1 {
@@ -64,7 +65,7 @@
 
 @media only screen and (max-width: 1025px){
     .swapbody {
-        padding: 60px 0 140px 85px;
+        padding: 60px 0 160px 85px;
     }
     .swapbody .image img:hover {
         transform: translateX(-20%);

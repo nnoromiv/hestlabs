@@ -53,7 +53,6 @@
 }
 
 .card-inner #card-button{
-    height: 40px;
     border-radius: 20px;
     padding: 5px 15px;
     font-size: 12px;
@@ -88,7 +87,7 @@
     }
     to {
         top: 0px;
-        background-color: black;
+        background-color: gray;
         color: white;
     }
 }
@@ -128,7 +127,6 @@
         transform: translateY(120px);
     }
     .card-inner #card-button {
-        height: 30px;
         font-size: 10px;
         padding: 5px;
     }
