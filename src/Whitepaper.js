@@ -13,7 +13,7 @@ const Whitepaper = () => {
   
  function downloadPDF(){
    var FileSaver = require('file-saver')
-  FileSaver.saveAs('/whitepaper.pdf', 'hest-whitepaper.pdf')
+  FileSaver.saveAs('https://raw.githubusercontent.com/nnoromiv/hestlabs/e6802ee4c1ecdc4bbe603c4b19711c8601d272de/public/whitepaper.pdf', 'hest-whitepaper.pdf')
  }
 
   function onDocumentLoadSuccess({ numOfPages }) {
@@ -42,7 +42,7 @@ const Whitepaper = () => {
     </div>
         <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center',}}>
         <Document
-        file='/whitepaper.pdf'
+        file='https://raw.githubusercontent.com/nnoromiv/hestlabs/e6802ee4c1ecdc4bbe603c4b19711c8601d272de/public/whitepaper.pdf'
         onLoadSuccess={onDocumentLoadSuccess}
         onLoadError={console.error}
         >

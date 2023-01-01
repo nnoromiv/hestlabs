@@ -3,7 +3,7 @@
     position: relative;
     z-index: 99;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr) !important;
 }
 #card {
     padding: 24px;
@@ -11,25 +11,36 @@
     border-radius: 20px;
 }
 
+:root{
+    --cl-color: #665D11;
+    --cl-bg-color: #F4EDA8;
+    --c2-color: #ffffff;
+    --c2-bg-color: #3A3A3A;
+    --c3-color: #4F3076;
+    --c3-bg-color: #ae6fff;
+    --c4-color: #7B2141;
+    --c4-bg-color: #ff699f;
+}
+
 
 .c1 {
-    color: #665D11;
-    background-color: #F4EDA8
+    color: var(--cl-color) !important;
+    background-color: var(--cl-bg-color) !important;
 }
 
 .c2 {
-    color: white;
-    background-color: #3A3A3A
+    color: var(--c2-color) !important;
+    background-color: var(--c2-bg-color) !important
 }
 
 .c3 {
-    color: #4F3076;
-    background-color: #ae6fff
+    color: var(--c3-color) !important;
+    background-color: var(--c3-bg-color) !important
 }
 
 .c4 {
-    color: #7B2141;
-    background-color: #ff699f
+    color: var(--c4-color) !important;
+    background-color: var(--c4-bg-color) !important
 }
 
 .card-body {
@@ -105,7 +116,7 @@
 
 @media only screen and (max-width: 768px){
     #card-group {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         height: fit-content;
     }
 }
@@ -134,4 +145,11 @@
         font-size: 14px;
     }
     
+}
+
+@media only screen and (max-width: 375px){
+    #card-title {
+        font-size: 16px;
+        transform: translateY(110px);
+    }
 }

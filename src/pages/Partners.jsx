@@ -5,7 +5,7 @@ import './styles/partners.css'
 const PARTNERSIMAGE = [
     {
         name: 'Forbes',
-        image: '/images/forbes.png',
+        image: 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/forbes.png',
         classname: 'p3',
     },
     {
@@ -25,7 +25,7 @@ const PARTNERSIMAGE = [
     },
     {
         name: 'Octium',
-        image: '/images/octium.png',
+        image: 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/octium.png',
         classname: 'p9'
     },
     {
@@ -35,7 +35,7 @@ const PARTNERSIMAGE = [
     },
     {
         name: 'Xeggex',
-        image: '/images/xeggex.png',
+        image: 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/xeggex.png',
         classname: 'p10'
     },
     {
@@ -45,7 +45,7 @@ const PARTNERSIMAGE = [
     },  
     {
         name: 'HyperPay',
-        image: '/images/hyperpay.png',
+        image: 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/hyperpay.png',
         classname: 'p5'
     },
     // {
@@ -55,7 +55,7 @@ const PARTNERSIMAGE = [
     // },
     {
         name: 'PayCools',
-        image: '/images/paycools.png',
+        image: 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/paycools.png',
         classname: 'p7'
     },
     

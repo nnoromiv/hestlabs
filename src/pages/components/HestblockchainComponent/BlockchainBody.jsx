@@ -24,7 +24,7 @@ const BlockchainBody = () => {
         </div>
     </div>  
     <div className='video-gif' >
-        <img alt='gif' src='/video/metaverse.gif' />
+        <img alt='gif' src='https://bounce.finance/images/bounce-metaverse/bounce-metaverse.gif' />
     </div>
     </div>
   )

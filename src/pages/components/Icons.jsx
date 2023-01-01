@@ -10,18 +10,18 @@ export const TelegramIcon = 'https://img.icons8.com/ios-filled/50/null/telegram-
 
 export const DiscordIcon = 'https://img.icons8.com/ios-filled/50/null/discord-logo.png'
 
-//Public file import
-export const BinanceWhiteIcon = '/images/binance-white.png'
+//Github file import
+export const BinanceWhiteIcon = 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/binance-white.png'
 
-export const EthereumWhiteIcon = '/images/ethereum-white.png'
+export const EthereumWhiteIcon = 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/ethereum-white.png'
 
-export const KusamaWhiteIcon = '/images/kusama-white.png'
+export const KusamaWhiteIcon = 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/kusama-white.png'
 
-export const PolygonWhiteIcon = '/images/polygon-white.png'
+export const PolygonWhiteIcon = 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/polygon-white.png'
 
-export const SolanaWhiteIcon = '/images/solana-white.webp'
+export const SolanaWhiteIcon = 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/solana-white.webp'
 
-export const PolkadotWhiteIcon = '/images/polkadot-white.png'
+export const PolkadotWhiteIcon = 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/polkadot-white.png'
 
 
 //Image from Freepik
