@@ -22,7 +22,7 @@ const StakeBody = () => {
         </div>
     </div>  
     <div className='image' >
-        <img alt='pay' src='https://bounce.finance/images/bounce-auction/screen.jpg' />
+        <img alt='pay' src='https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/Blockchain.png' />
     </div>
     </div>
   )
