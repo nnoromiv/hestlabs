@@ -24,7 +24,7 @@ const SwapBody = () => {
         </div>
     </div>  
     <div className='image' >
-        <img alt='pay' src='https://bounce.finance/images/bounce-auction/screen.jpg' />
+        <img alt='pay' src='https://raw.githubusercontent.com/nnoromiv/hestlabs/6eb9f50eb000f77f2fd5c267ed83cd545dbc3401/public/images/Swap.png' />
     </div>
     </div>
   )
