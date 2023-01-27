@@ -11,25 +11,33 @@ const CARDINFOS = [
         cardClassname: 'c3',
         cardTitle: 'Blockchain',
         cardImage: <HubIcon sx={{fontSize: 50}} />,
-        cardHrf: 'blockchain-link'
+        cardHrf: 'blockchain-link',
+        cardBtnName: 'Landing Page',
+        cardBtnLink: ' '
     },
     {
         cardClassname: 'c1',
         cardTitle: 'Hest Pay',
         cardImage: <ScatterPlotIcon sx={{fontSize: 50}} />,
-        cardHrf: 'pay-link'
+        cardHrf: 'pay-link',
+        cardBtnName: 'Landing Page',
+        cardBtnLink: ' '
     },
     {
         cardClassname: 'c2',
         cardTitle: 'Hest Swap',
         cardImage: <FitbitIcon sx={{fontSize: 50}} />,
-        cardHrf: 'swap-link'
+        cardHrf: 'swap-link',
+        cardBtnName: 'Landing Page',
+        cardBtnLink: ' '
     },
     {
         cardClassname: 'c4',
         cardTitle: 'Hest Stake',
         cardImage: <ModeFanOffIcon sx={{fontSize: 50}} />,
-        cardHrf: 'stake-link'
+        cardHrf: 'stake-link',
+        cardBtnName: 'CoinMarket Cap',
+        cardBtnLink: 'https://coinmarketcap.com/currencies/hest-stake'
     },
 ]
 
@@ -57,8 +65,10 @@ const Cards = () => {
             <Card.Body id='card-body'>
                 <Card.Title id='card-title'>{item.cardTitle}</Card.Title>
                 <section className='card-inner' >
-                    <Button variant='light' id='card-button' href={`#${item.cardHrf}`}>Landing page</Button>
-                    <p style={{display:'flex !important'}}> Learn more</p>
+                    <Button variant='light' id='card-button' href={`${item.cardBtnLink}`}>{item.cardBtnName} </Button>
+                    <a href={`#${item.cardHrf}`} style={{textDecoration: 'none'}}>
+                    <p style={{display:'flex !important'}}>Landing Page</p>
+                    </a>
                 </section>
             </Card.Body>
         </Card>

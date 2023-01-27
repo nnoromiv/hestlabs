@@ -26,3 +26,7 @@ export const PolkadotWhiteIcon = 'https://raw.githubusercontent.com/nnoromiv/hes
 
 //Image from Freepik
 export const WHITECITY = 'https://img.freepik.com/premium-photo/3d-city-panorama-isolated-white-background-3d-rendering_101266-9873.jpg?w=1060'
+
+//New
+export const CMCLOGO = 'https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_1.svg?_=5f8a6ce'
+export const COINGECKOLOGO = 'https://static.coingecko.com/s/cny_2023_logo-5c7d260594cea89b082d811546586e0b02422a6d222f5513c74e0d6b6706ada0.png'

@@ -46,6 +46,18 @@ const NAVIGATION = [
         id: 'nav-navigation',
         hrf: '/whitepaper'
     },
+    {
+        nav: 'Audit',
+        eventkey: 7,
+        id: 'nav-navigation',
+        hrf: '/audit'
+    },
+    {
+        nav: 'KYC Report',
+        eventkey: 8,
+        id: 'nav-navigation',
+        hrf: '/kycreport'
+    },
 ]
 
 function Navigation() {
@@ -67,7 +79,7 @@ function Navigation() {
                 NAVIGATION.slice(4,).map(navigation => {
                     return(
                         <Nav.Item key={navigation.eventkey}>
-                        <Nav.Link eventKey={navigation.eventkey} id={navigation.id} href={navigation.hrf} >
+                        <Nav.Link eventKey={navigation.eventkey} id={navigation.id} href={navigation.hrf} target="_blank" >
                         {navigation.nav}
                         </Nav.Link>
                         </Nav.Item>

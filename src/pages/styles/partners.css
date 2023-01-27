@@ -23,9 +23,9 @@
     max-width: 500px;
     width: 100%;
     max-height: 200px;
-    height: 100%;
     border: 1px solid white;
     border-radius: 100%;
+    object-fit: contain;
 }
 
 .partners .partners-list   h4{

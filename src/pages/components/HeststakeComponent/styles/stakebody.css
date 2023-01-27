@@ -44,19 +44,24 @@
 }
 
 .stakebody .intro-button {
-    margin: 60px 0 0 0;
+    width: 200px;
+    margin: 60px 0 0 10px;
     color: black;
-    font-size: 16px;
+    /* font-size: 16px; */
     background-color: white;
     border: 1px solid white;
-    padding: 8px 80px;
+    /* padding: 8px 100px 0; */
     border-radius: 30px;
     transition: 0.5s;
 }
 
+.stakebody .intro-button img {
+    width: 150px;
+    height: 30px;
+    object-fit: contain;
+}
+
 .stakebody .intro-button:hover{
-    background-color: black;
-    color: white;
     border: 1px solid black;
 }
 
@@ -97,9 +102,6 @@
         font-size: 12px;
         line-height: 20px;
         width: 400px;
-    }
-    .stakebody .intro-button{
-        padding: 8px 40px;
     }
     .stakebody .image img {
         height: 400px;

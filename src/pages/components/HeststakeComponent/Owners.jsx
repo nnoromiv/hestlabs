@@ -41,10 +41,10 @@ const Owners = () => {
     <h1>The team:</h1>      
     <div className='team'>
         {
-            OWNERS.map((owners, index) => {
+            OWNERS.map((owners) => {
                 return (
                     <>
-                    <div className='person' key={index}>
+                    <div className='person' key={owners.name}>
                         <a href={owners.link} target="_blank" rel='noreferrer'>
                             <h1>{owners.name}</h1>
                         </a>

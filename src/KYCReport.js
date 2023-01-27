@@ -7,14 +7,14 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
-const Whitepaper = () => {
+const KYCReport = () => {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
   return (
     <div>
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.worker.js" >
         <div>
             <Viewer
-                fileUrl='https://raw.githubusercontent.com/nnoromiv/hestlabs/dd5a04fdb2788e1b6126342cd72821f25b0257d8/public/whitepaper.pdf'
+                fileUrl='https://raw.githubusercontent.com/nnoromiv/hestlabs/ef32c781d888524a90cc4bc04d3d1338f26512e5/public/HestLabsKYCreportBySnipeFinance.pdf'
                 plugins={[
                     defaultLayoutPluginInstance,
                 ]}
@@ -26,4 +26,4 @@ const Whitepaper = () => {
   )
 }
 
-export default Whitepaper
+export default KYCReport

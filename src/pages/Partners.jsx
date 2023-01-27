@@ -1,23 +1,34 @@
 import { Divider } from '@mui/material'
 import React from 'react'
+import { CMCLOGO, COINGECKOLOGO } from './components/Icons'
 import './styles/partners.css'
 
 const PARTNERSIMAGE = [
+     {
+        name: 'CoinMarketCap',
+        image: `${CMCLOGO}`,
+        classname: 'p7',
+    },
+     {
+        name: 'CoinGecko',
+        image: `${COINGECKOLOGO}`,
+        classname: 'p7',
+    },
     {
         name: 'Forbes',
         image: 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/forbes.png',
         classname: 'p3',
     },
-    {
-        name: 'Web3ORB',
-        image: 'https://pbs.twimg.com/profile_images/1589674346494431232/dK85kvgJ_400x400.jpg',
-        classname: 'p8'
-    },
-    {
-        name: 'Livecoinwatch',
-        image: 'https://brandfetch.com/_next/image?url=https%3A%2F%2Fasset.brandfetch.io%2FidZvuvIAgb%2FidncvTidjS.jpeg&w=1920&q=75',
-        classname: 'p2',
-    },
+    // {
+    //     name: 'Web3ORB',
+    //     image: 'https://pbs.twimg.com/profile_images/1589674346494431232/dK85kvgJ_400x400.jpg',
+    //     classname: 'p8'
+    // },
+    // {
+    //     name: 'Livecoinwatch',
+    //     image: 'https://brandfetch.com/_next/image?url=https%3A%2F%2Fasset.brandfetch.io%2FidZvuvIAgb%2FidncvTidjS.jpeg&w=1920&q=75',
+    //     classname: 'p2',
+    // },
     {
         name: 'Nomics',
         image: 'https://avatars.githubusercontent.com/u/32463793?s=200&v=4',
@@ -28,11 +39,11 @@ const PARTNERSIMAGE = [
         image: 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/octium.png',
         classname: 'p9'
     },
-    {
-        name: 'Bi-Finance',
-        image: 'https://theme.zdassets.com/theme_assets/14997702/222c7335abc7c55ee38d6ea660ac886fb253cf12.jpg',
-        classname: 'p11'
-    },
+    // {
+    //     name: 'Bi-Finance',
+    //     image: 'https://theme.zdassets.com/theme_assets/14997702/222c7335abc7c55ee38d6ea660ac886fb253cf12.jpg',
+    //     classname: 'p11'
+    // },
     {
         name: 'Xeggex',
         image: 'https://raw.githubusercontent.com/nnoromiv/hestlabs/master/public/images/xeggex.png',
@@ -59,11 +70,11 @@ const PARTNERSIMAGE = [
         classname: 'p7'
     },
     
-    {
-        name: 'Galaxy labs',
-        image: '',
-        classname: 'p12'
-    },
+    // {
+    //     name: 'Galaxy labs',
+    //     image: '',
+    //     classname: 'p12'
+    // },
 ]
 
 export const MyDivider = () => {
