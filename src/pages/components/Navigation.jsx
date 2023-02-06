@@ -165,7 +165,7 @@ const SOCIALS = [
     {
         name: 'telegram',
         src: `${TelegramIcon}`,
-        hrf: 'https://t.me/hestlabs'
+        hrf: 'https://t.me/hestlab'
     },
     {
         name: 'discord',
